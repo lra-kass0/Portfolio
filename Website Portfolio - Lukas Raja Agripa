@@ -1,0 +1,59 @@
+import streamlit as st
+#####################
+# Header 
+st.write('''
+# Lukas Raja Agripa
+##### *Website Portfolio* 
+''')
+
+#####################
+# Custom function for printing text
+def txt(a, b):
+  col1, col2 = st.columns([4,1])
+  with col1:
+    st.markdown(a)
+  with col2:
+    st.markdown(b)
+
+def txt2(a, b):
+  col1, col2 = st.columns([1,4])
+  with col1:
+    st.markdown(f'`{a}`')
+  with col2:
+    st.markdown(b)
+
+#####################
+st.markdown('''
+## Education
+''')
+
+txt('**Student**, *`Senior High School 2 Kediri City`*', '2020 - 2023')
+txt('**Student** , *`The School of Electrical and Informatics Engineering - Computation`*, Bandung Institute of Technology','2023 - Now')
+
+#####################
+st.markdown('''
+## Organizational and Technical Experiences 
+''')
+st.markdown('''
+- `Secretary, Equipment Division, and Operator Division --> Senior High School 2 Kediri City (2021 - 2022)
+- `Finalist (9 Aug 2023 still on going) --> AI4Impact Career Scholarship 3.0 For Internship at Terra AI Singapore 
+''')
+# --- SKILLS ---
+st.write('\n')
+st.subheader("Skills and Achievements")
+st.write(
+    """
+- `Programming`: Phyton, Borland C++
+- `Photo and Video Editing` : photoshop, Vidio Editing app
+- `Article Typing` 
+- `Public Speaking`
+- `Word Analysis`
+"""
+)
+#####################
+st.markdown('''
+## Social Media
+''')
+txt2('GitHub', 'https://github.com/lra-kass0')
+txt2('Instagram', 'https://www.instagram.com/')
+txt2('Line','https://line.me/ti/p/P1MEFZkV8N' )
